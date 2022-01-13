@@ -1,2 +1,13 @@
 # f -> formate
-print(f"20 days are {20 * 24 * 60} minutes")
+to_seconds = 3
+name_of_unit = 'seconds'
+
+
+def days_to_units(value):
+    return value * to_seconds
+
+
+user_input = input("Please Type  :\n")
+
+x = days_to_units(int(user_input))
+print(x)
